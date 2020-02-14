@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LeetCode26",
+            "request": "launch",
+            "mainClass": "LeetCode26",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ReverseList",
             "request": "launch",
             "mainClass": "ReverseList",
