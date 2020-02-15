@@ -4,3 +4,8 @@
 开发工具：vscode，安装插件Java Extension Pack
 
 vscode有智能提示，可调试，有重构支持，满足代码练习要求，相比IDEA更轻量级，普通笔记本即可流畅运行。
+
+
+LeetCode26 - 删除排序数组中的重复项
+LeetCode27 - 移除元素
+LeetCode203 - 移除链表元素

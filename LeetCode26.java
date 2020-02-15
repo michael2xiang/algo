@@ -3,7 +3,7 @@ public class LeetCode26 {
     public int removeDuplicates(int[] nums) {
         int p = 0;
         for (int q = 1; q < nums.length; q++) {
-            if (nums[p] != nums[q]) 
+            if (nums[q] != nums[p]) 
             {
                 ++p;
                 nums[p] = nums[q];
