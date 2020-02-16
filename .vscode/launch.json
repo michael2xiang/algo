@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LeetCode21",
+            "request": "launch",
+            "mainClass": "LeetCode21",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LeetCode206",
+            "request": "launch",
+            "mainClass": "LeetCode206",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LeetCode203",
             "request": "launch",
             "mainClass": "LeetCode203",
