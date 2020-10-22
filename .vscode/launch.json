@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - arraydemo",
+            "request": "launch",
+            "mainClass": "arraydemo",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LeetCode15",
             "request": "launch",
             "mainClass": "LeetCode15",
