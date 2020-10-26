@@ -2,12 +2,12 @@ import javafx.scene.chart.Chart;
 
 public class StrSearch {
     /**
-     * https://www.cnblogs.com/
-     * 给定1个二维字符数组m和单词1个w，搜索w是否在m中。搜索的定义是从m的任意位置开始，可以上下左右移动，依次和w每个字符匹配，
-     * 如果w能匹配完，则存在，否则不存在。 - 例子："zoo"，"zoro"，"xtifx"都能够搜索成功，但"oto"搜索不成功。 
-     * a c d z 
-     * x t r o 
-     * f i o o
+     https://www.cnblogs.com/
+     给定1个二维字符数组m和单词1个w，搜索w是否在m中。搜索的定义是从m的任意位置开始，可以上下左右移动，依次和w每个字符匹配，
+     如果w能匹配完，则存在，否则不存在。 - 例子："zoo"，"zoro"，"xtifx"都能够搜索成功，但"oto"搜索不成功。 
+     a c d z 
+     x t r o 
+     f i o o
      * 
      * @param args
      */
@@ -38,16 +38,13 @@ public class StrSearch {
         || flag[row * arr[0].length + col] )
             return false;
 
-
-            flag[row * arr[0].length + col] = true;
-            index++;
-            if (help(arr, word, row + 1, col, index, flag) || help(arr, word, row - 1, col, index, flag)
-                    || help(arr, word, row, col - 1, index, flag) || help(arr, word, row, col + 1, index, flag)) {
-                return true;
-            }
-            flag[row * arr[0].length + col] = false;
-        
-
+        flag[row * arr[0].length + col] = true;
+        index++;
+        if (help(arr, word, row + 1, col, index, flag) || help(arr, word, row - 1, col, index, flag)
+                || help(arr, word, row, col - 1, index, flag) || help(arr, word, row, col + 1, index, flag)) {
+            return true;
+        }
+        flag[row * arr[0].length + col] = false;
         return result;
     }
 
