@@ -2,7 +2,11 @@ import javafx.scene.chart.Chart;
 
 public class StrSearch {
     /**
-
+//         给定1个二维字符数组m和单词1个w，搜索w是否在m中。搜索的定义是从m的任意位置开始，可以上下左右移动，依次和w每个字符匹配，如果w能匹配完，则存在，否则不存在。
+//             - 例子："zoo"，"zoro"，"xtifx"都能够搜索成功，但"oto"搜索不成功。
+//             a c d z
+//             x t r o
+//             f i o o
      */
     public static void main(String[] args) {
         char[][] arr = new char[][] { { 'a', 'c', 'd', 'z' }, { 'x', 't', 'r', 'o' }, { 'f', 'i', 'o', 'o' } };

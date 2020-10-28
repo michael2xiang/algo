@@ -1,6 +1,8 @@
 public class LeetCode39{
 
     /**
+     * 深度优先搜索
+     * 
      给定一个无重复元素的数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。
 
         candidates 中的数字可以无限制重复被选取。
@@ -35,8 +37,8 @@ public class LeetCode39{
     public static void main(String[] args) {
         public List<List<Integer>> combinationSum(int[] candidates, int target) {
             List<List<Integer>> ans = new ArrayList<List<Integer>>();
-            List<Integer> combine = new ArrayList<Integer>();
-            dfs(candidates, target, ans, combine, 0);
+            List<Integer> pathList = new ArrayList<Integer>();
+            dfs(candidates, target, ans, pathList, 0);
             return ans;
         }
     
@@ -57,21 +59,6 @@ public class LeetCode39{
             dfs(candidates,target-candidates[idx],ans,pathList,idx);
             pathList.remove(pathList.size()-1);
         }
-
-        // if(sum== target){
-        //     ans.add(new ArrarList(pathList));
-        //     return;
-        // }else if(sum>target || candidates.length == idx){
-        //     return;
-        // }
-        // dfs(candidates,target,sum,idx+1,ans,pathList);
-
-
-        // for(int i=0;i<candidates.length;i++){
-        //         sum += candidates[i];
-        //         dfs(candidates,target,sum,idx+1,ans,pathList);
-        //         pathList.remove(pathList.size()-1);
-        // }
     }
 
 }
