@@ -1,4 +1,7 @@
-public class LeetCode39{
+import java.util.ArrayList;
+import java.util.List;
+
+public class LeetCode39 {
 
     /**
      * 深度优先搜索
@@ -34,22 +37,22 @@ public class LeetCode39{
         著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。 
      
      */
-    public static void main(String[] args) {
-        public List<List<Integer>> combinationSum(int[] candidates, int target) {
-            List<List<Integer>> ans = new ArrayList<List<Integer>>();
-            List<Integer> pathList = new ArrayList<Integer>();
-            dfs(candidates, target, ans, pathList, 0);
-            return ans;
-        }
-    
-    }
+    public static void main(final String[] args) {
 
-    public List<List<Integer>> dfs(int[] candidates, int target, List<ArrarList<int>> ans ,List<int> pathList , int idx) {
+    }
+    public List<List<Integer>> combinationSum(final int[] candidates, final int target) {
+        final List<List<Integer>> ans = new ArrayList<List<Integer>>();
+        final List<Integer> pathList = new ArrayList<Integer>();
+        dfs(candidates, target, ans, pathList, 0);
+        return ans;
+    }
+    
+    public static List<List<Integer>> dfs(final int[] candidates, final int target, List<ArrarList<int>> ans ,List<int> pathList , int idx) {
         if(candidates.length == idx){
             return;
         }
         if(target==0){
-            ans.add(new ArrarList<int>(pathList));
+            ans.add(new ArrarList<Integer>(pathList));
             return;
         }
         dfs(candidates,target,ans,pathList,idx+1);

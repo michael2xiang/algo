@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LeetCode10",
+            "request": "launch",
+            "mainClass": "LeetCode10",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LeedCode04",
+            "request": "launch",
+            "mainClass": "LeedCode04",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Ademo001",
+            "request": "launch",
+            "mainClass": "Ademo001",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StrSearch",
             "request": "launch",
             "mainClass": "StrSearch",
