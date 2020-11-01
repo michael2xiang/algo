@@ -10,8 +10,11 @@ import java.util.Stack;
 public class Ademo001 {
     public static void main(final String[] args) {
 
-        int[] array2 = { 1, 2, 3, 4 };
-        Arrays.sort(array2, (o1, o2) -> o1 > o2 ? -1 : 1);
+        int[] array1 = { 1, 2, 3, 4 };
+        Arrays.sort(array1, (o1, o2) -> o1 > o2 ? -1 : 1);
+
+
+        int[][] array2 = { {1,2,3},{4,5,6},{7,8,9}};
 
         // 优先级队列，默认是大顶推
         Queue<Integer> q = new PriorityQueue<>();
