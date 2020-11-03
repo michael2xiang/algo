@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DP005",
+            "request": "launch",
+            "mainClass": "DP005",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DP004",
+            "request": "launch",
+            "mainClass": "DP004",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DP003",
+            "request": "launch",
+            "mainClass": "DP003",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DPPre002",
+            "request": "launch",
+            "mainClass": "DPPre002",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - 中文",
+            "request": "launch",
+            "mainClass": "中文",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - dp003",
+            "request": "launch",
+            "mainClass": "dp003",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LeetCode10",
             "request": "launch",
             "mainClass": "LeetCode10",
