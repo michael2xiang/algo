@@ -1,4 +1,4 @@
-public class DPPre002 {
+public class DPBagPre2 {
     /**
      * 对于一组不同重量、不可分割的物品，我们需要选择一些装入背包， 在满足背包最大重量限制的前提下 ，背包中物品总重量的最大值是多少呢？
      * 【回溯】穷举 
@@ -17,7 +17,7 @@ public class DPPre002 {
         int w = 9;
         boolean[][] states = new boolean[arrs.length][w + 1];
         
-        DPPre002 obj = new DPPre002();
+        DPBagPre2 obj = new DPBagPre2();
         obj.func(arrs, 0, 0, w, states);
         System.out.println(obj.maxValue);
     }

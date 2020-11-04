@@ -11,7 +11,7 @@ public class Ademo001 {
     public static void main(final String[] args) {
 
         int[] array1 = { 1, 2, 3, 4 };
-        Arrays.sort(array1, (o1, o2) -> o1 > o2 ? -1 : 1);
+        // Arrays.sort(array1, (o1, o2) -> o1 > o2 ? -1 : 1);
 
 
         int[][] array2 = { {1,2,3},{4,5,6},{7,8,9}};

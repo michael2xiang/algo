@@ -1,4 +1,4 @@
-public class DP005 {
+public class DPBagVal1Arrs {
     /**
      * 对于一组不同重量，不同价格、不可分割的物品，我们需要选择一些装入背包， 在满足背包最大重量限制的前提下，背包中物品总价格的最大值是多少呢？
      * 
@@ -13,7 +13,7 @@ public class DP005 {
         int[] vals = { 4, 5, 1, 4, 7, 4, 9 };
         int w = 9;
 
-        DP005 obj = new DP005();
+        DPBagVal1Arrs obj = new DPBagVal1Arrs();
         int maxValue = obj.dp(arrs, vals, w);
         System.out.println(maxValue);
     }

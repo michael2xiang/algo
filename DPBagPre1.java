@@ -1,4 +1,4 @@
-public class dp003 {
+public class DPBagPre1 {
     /**
      * 对于一组不同重量、不可分割的物品，我们需要选择一些装入背包，
      * 【回溯】穷举 时间复杂度：2的n次方，指数级
@@ -11,7 +11,7 @@ public class dp003 {
     public static void main(String[] args) {
         int[] arrs = { 1, 3, 6, 2, 4, 5, 1 };
         int w = 9;
-        dp003 obj = new dp003();
+        DPBagPre1 obj = new DPBagPre1();
         obj.func(arrs, 0, 0, w);
         System.out.println(obj.maxValue);
     }

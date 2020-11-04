@@ -24,14 +24,14 @@ public class LeetCode44{
      */
     public static void main(String[] args) {
         int[] arr ={1,2,3};
-        boolean[] used = boolean[arr.length];
-        List<int> pathList = new ArrayList<int>();
-        List<ArrayList<int>> res = new ArrayList<ArrayList<int>>();
+        boolean[] used = new boolean[arr.length];
+        List<Integer> pathList = new ArrayList<Integer>();
+        List<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
         dfs(arr,arr.length,used,0, pathList,res);
         System.out.println(res);
         
     }
-    private void dfs(int[] arr,int length, boolean[] used,index,List<int> pathList,List<ArrayList<int>> res) {
+    private void dfs(int[] arr,int length, boolean[] used,int index,List<int> pathList,List<ArrayList<int>> res) {
         if(index == length){
             res.add(new ArrayList(pathList));
             return;

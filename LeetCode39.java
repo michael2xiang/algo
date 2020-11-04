@@ -43,11 +43,11 @@ public class LeetCode39 {
     public List<List<Integer>> combinationSum(final int[] candidates, final int target) {
         final List<List<Integer>> ans = new ArrayList<List<Integer>>();
         final List<Integer> pathList = new ArrayList<Integer>();
-        dfs(candidates, target, ans, pathList, 0);
+        ans = dfs(candidates, target, ans, pathList, 0);
         return ans;
     }
     
-    public static List<List<Integer>> dfs(final int[] candidates, final int target, List<ArrarList<int>> ans ,List<int> pathList , int idx) {
+    public static List<List<Integer>> dfs(final int[] candidates, final int target, List<ArrarList<Integer>> ans ,List<Integer> pathList , int idx) {
         if(candidates.length == idx){
             return;
         }
