@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Fib",
+            "request": "launch",
+            "mainClass": "Fib",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DPMinPathSum",
+            "request": "launch",
+            "mainClass": "DPMinPathSum",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LongestPalindrome",
+            "request": "launch",
+            "mainClass": "LongestPalindrome",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - dp002",
             "request": "launch",
             "mainClass": "dp002",
