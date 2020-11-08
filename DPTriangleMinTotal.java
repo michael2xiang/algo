@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class DPMinimumTotal {
+public class DPTriangleMinTotal {
     /**
      * 给定一个三角形，找出自顶向下的最小路径和。每一步只能移动到下一行中相邻的结点上。 相邻的结点 在这里指的是 下标 与 上一层结点下标 相同或者等于
      * 上一层结点下标 + 1 的两个结点。 来源：力扣（LeetCode）
@@ -21,7 +21,7 @@ public class DPMinimumTotal {
         triangle.add(Arrays.asList(3, 4));
         triangle.add(Arrays.asList(6, 5, 7));
         triangle.add(Arrays.asList(4, 1, 8, 3));
-        DPMinimumTotal obj = new DPMinimumTotal();
+        DPTriangleMinTotal obj = new DPTriangleMinTotal();
         int res = obj.minimumTotal(triangle);
         System.out.println(res);
 

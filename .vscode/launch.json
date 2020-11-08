@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DPMinimumTotal2",
+            "request": "launch",
+            "mainClass": "DPMinimumTotal2",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DPCoinChange",
             "request": "launch",
             "mainClass": "DPCoinChange",
