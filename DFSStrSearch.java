@@ -1,5 +1,5 @@
 
-public class StrSearch {
+public class DFSStrSearch {
     /**
      *      * https://www.cnblogs.com/
      * 给定1个二维字符数组m和单词1个w，搜索w是否在m中。搜索的定义是从m的任意位置开始，可以上下左右移动，依次和w每个字符匹配，

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StrLengthOfLongestSubstring",
+            "request": "launch",
+            "mainClass": "StrLengthOfLongestSubstring",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DPMinimumTotal2",
             "request": "launch",
             "mainClass": "DPMinimumTotal2",
