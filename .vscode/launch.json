@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - KthSmallest",
+            "request": "launch",
+            "mainClass": "KthSmallest",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StrLengthOfLongestSubstring",
             "request": "launch",
             "mainClass": "StrLengthOfLongestSubstring",

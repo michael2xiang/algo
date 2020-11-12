@@ -6,13 +6,13 @@ public class KthSmallest {
         if (arr == null || k > arr.length) {
             return 0;
         }
-        int pivot = partition(arr, start, end);
+        int pivot = partitionTwoIndex(arr, start, end);
         System.out.println("pivot=" + pivot);
         while ((pivot + 1) != k) {
             if ((pivot + 1) > k) {
-                pivot = partition(arr, start, pivot - 1);
+                pivot = partitionTwoIndex(arr, start, pivot - 1);
             } else {
-                pivot = partition(arr, pivot + 1, end);
+                pivot = partitionTwoIndex(arr, pivot + 1, end);
             }
         }
         return arr[pivot];
@@ -24,6 +24,28 @@ public class KthSmallest {
         // pivot = partition(arr, pivot + 1, end);
         // }
         // return arr[pivot];
+    }
+
+    private int partitionTwoIndex(int[] arr, int start, int end) {
+        int pivotValue = arr[start];
+        int i = start;
+        int j = end;
+        while (i != j) {
+            while (i < j && arr[i] <= pivotValue) {
+                i++;
+            }
+            while (i < j && arr[j] >= pivotValue) {
+                j--;
+            }
+            if (j > i) {
+                int tmp = arr[i];
+                arr[i] = arr[j];
+                arr[j] = tmp;
+            }
+        }
+        arr[start] = arr[i];
+        arr[i] = pivotValue;
+        return i;
     }
 
     private int partition(int[] arr, int start, int end) {
