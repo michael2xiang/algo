@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DFSStrArrange",
+            "request": "launch",
+            "mainClass": "DFSStrArrange",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LeetCode44",
+            "request": "launch",
+            "mainClass": "LeetCode44",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - KthSmallest",
             "request": "launch",
             "mainClass": "KthSmallest",
