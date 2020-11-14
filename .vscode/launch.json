@@ -9,6 +9,20 @@
             "name": "CodeLens (Launch) - DFSStrArrange",
             "request": "launch",
             "mainClass": "DFSStrArrange",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DFSStrArrange2",
+            "request": "launch",
+            "mainClass": "DFSStrArrange2",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DFSStrArrange",
+            "request": "launch",
+            "mainClass": "DFSStrArrange",
             "projectName": "algo_78cee7d7"
         },
         {

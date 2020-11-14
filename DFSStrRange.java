@@ -1,13 +1,13 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class DFSStrArrange {
+public class DFSStrRange {
     /**
      * 字符全排列
      * @param args
      */
     public static void main(String[] args) {
-        String s = "abc";
+        String s = "aba";
         boolean[] states = new boolean[s.length()];
 
         List<ArrayList<Character>> res = new ArrayList<ArrayList<Character>>();
