@@ -13,6 +13,14 @@ public class Search1 {
         System.out.println(res);
     }
 
+    public int searchLeftRight(int[] nums, int target) {
+        int left =0;
+        int right = nums.length;
+        
+
+        
+        return res;
+    }
     
 
 
