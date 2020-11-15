@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Search1",
+            "request": "launch",
+            "mainClass": "Search1",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DFSStrArrange",
             "request": "launch",
             "mainClass": "DFSStrArrange",
