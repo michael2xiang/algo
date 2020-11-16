@@ -4,11 +4,11 @@
  * 输入: nums = [5,7,7,8,8,10], target = 8 输出: 2 示例 2:
  */
 
-public class Search1 {
+public class SearchNumCount {
     public static void main(String[] args) {
         int[] nums = { 5, 7, 7, 8, 8, 10 };
         int target = 8;
-        Search1 obj = new Search1();
+        SearchNumCount obj = new SearchNumCount();
         int res = obj.search(nums, target);
         System.out.println(res);
     }
