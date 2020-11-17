@@ -19,20 +19,30 @@ public class Ademo001 {
         // 优先级队列，默认是大顶推
         Queue<Integer> q = new PriorityQueue<>();
         q.add(3);// 添加元素
-        q.peek();// 返回队首元素
-        q.poll();// 返回队首元素，队首元素出队列
+        q.peek();// 返回队首元素，不出列
+        q.poll();// 返回队首元素，出列
         q.size();// 返回队列元素个数
         q.isEmpty();// 判断队列是否为空，为空返回true,不空返回false
 
         // 栈
         Stack<Integer> st = new Stack<Integer>();
         st.push(1); // 入栈
-        Integer a = (Integer) st.pop(); // 出
+        Integer a = st.pop(); // 出
 
         // 队列
         Queue<String> queue = new LinkedList<String>();
         queue.offer("a");// 添加头部元素
         queue.poll(); // 尾部返回第一个元素，并在队列中删除
+
+        //双向队列
+        LinkedList<String> dequeue = new LinkedList<>();
+        //头add
+        dequeue.addFirst("b");
+        //尾add
+        dequeue.addLast("a");
+        dequeue.removeFirst();
+        dequeue.removeLast();
+        
 
         HashMap<String, String> map = new HashMap();
         map.put("a", "b");// 设置K键的值为V，存在k则覆盖
