@@ -44,7 +44,7 @@ public class TreeLevelRead {
         return lists.stream().mapToInt(k -> k).toArray();
     }
 
-    public static class TreeNode {
+     static class TreeNode {
         int val;
         TreeNode left;
         TreeNode right;
