@@ -9,6 +9,20 @@
             "name": "CodeLens (Launch) - GreedCutRope",
             "request": "launch",
             "mainClass": "GreedCutRope",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TreeRebuild",
+            "request": "launch",
+            "mainClass": "TreeRebuild",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GreedCutRope",
+            "request": "launch",
+            "mainClass": "GreedCutRope",
             "projectName": "algo_78cee7d7"
         },
         {
