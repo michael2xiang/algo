@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MyPow",
+            "request": "launch",
+            "mainClass": "MyPow",
+            "projectName": "algo_9254d58b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GreedCutRope",
             "request": "launch",
             "mainClass": "GreedCutRope",
