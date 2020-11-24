@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Bit1Count",
+            "request": "launch",
+            "mainClass": "Bit1Count",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TreeIsPostorder",
             "request": "launch",
             "mainClass": "TreeIsPostorder",

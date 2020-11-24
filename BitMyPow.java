@@ -6,9 +6,9 @@
  * 链接：https://leetcode-cn.com/problems/shu-zhi-de-zheng-shu-ci-fang-lcof
  * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
  */
-public class MyPow {
+public class BitMyPow {
     public static void main(String[] args) {
-        MyPow obj = new MyPow();
+        BitMyPow obj = new BitMyPow();
         double res1 = obj.getPow(2, 9);
         double res2 = obj.getPowGood(2, 9);
         System.out.println(res1);
@@ -55,7 +55,7 @@ public class MyPow {
                 res = res * x;
             }
             b = b / 2;
-            x = x * x;
+            x = x * x; //每位的大小，类似：0：3的0次方；1:3的1次方；2：3的2次方；
         }
         return res;
     }
