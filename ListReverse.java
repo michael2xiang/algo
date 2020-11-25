@@ -1,4 +1,4 @@
-public class LeetCode206 {
+public class ListReverse {
 /**
  * 反转一个单链表。
 
@@ -60,7 +60,7 @@ public class LeetCode206 {
         ListNode f = new ListNode(2, e);
         ListNode g = new ListNode(1, f);
         // ListNode tmpNode = new LeetCode206().reverseList(g);
-        ListNode tmpNode = new LeetCode206().reverseListRecursion(g);
+        ListNode tmpNode = new ListReverse().reverseListRecursion(g);
         while (tmpNode != null) {
             System.out.print(tmpNode.val + " -> ");
             tmpNode = tmpNode.next;
