@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SortMaxQueue",
+            "request": "launch",
+            "mainClass": "SortMaxQueue",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - StrSum2",
             "request": "launch",
             "mainClass": "StrSum2",
