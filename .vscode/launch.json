@@ -6,10 +6,24 @@
     "configurations": [
         {
             "type": "java",
-            "name": "CodeLens (Launch) - StrSum",
+            "name": "CodeLens (Launch) - Bit1Count",
             "request": "launch",
-            "mainClass": "StrSum",
-            "projectName": "algo_50780a28"
+            "mainClass": "Bit1Count",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TreeIsPostorder",
+            "request": "launch",
+            "mainClass": "TreeIsPostorder",
+            "projectName": "algo_9254d58b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyPow",
+            "request": "launch",
+            "mainClass": "MyPow",
+            "projectName": "algo_9254d58b"
         },
         {
             "type": "java",
