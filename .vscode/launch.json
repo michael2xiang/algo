@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - StrSum2",
+            "request": "launch",
+            "mainClass": "StrSum2",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SortMaxSlidingWindow",
+            "request": "launch",
+            "mainClass": "SortMaxSlidingWindow",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StrSum",
+            "request": "launch",
+            "mainClass": "StrSum",
+            "projectName": "algo_50780a28"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SortMaxSlidingWindow",
+            "request": "launch",
+            "mainClass": "SortMaxSlidingWindow",
+            "projectName": "algo_78cee7d7"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Bit1Count",
             "request": "launch",
             "mainClass": "Bit1Count",
