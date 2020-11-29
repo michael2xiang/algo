@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Deque;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,11 +19,14 @@ public class Ademo001 {
 
         // 优先级队列，默认是大顶推
         Queue<Integer> q = new PriorityQueue<>();
-        q.add(3);// 添加元素
-        q.peek();// 返回队首元素，不出列
-        q.poll();// 返回队首元素，出列
+        q.add(3);// 添加元素，没空间抛异常
+        q.remove();// 弹出元素，为空抛异常
+        q.peek();// 查看队首元素，不出列
+        q.offer(4);// 添加元素，不抛异常
+        q.poll();// 弹出元素，不抛异常
+
         q.size();// 返回队列元素个数
-        q.isEmpty();// 判断队列是否为空，为空返回true,不空返回false
+        q.isEmpty();// 判断队列是否为空
 
         // 栈
         Stack<Integer> st = new Stack<Integer>();
@@ -35,13 +39,14 @@ public class Ademo001 {
         queue.poll(); // 尾部返回第一个元素，并在队列中删除
 
         //双向队列
-        LinkedList<String> dequeue = new LinkedList<>();
+        Deque<String> dequeue = new LinkedList<>();
         //头add
-        dequeue.addFirst("b");
+        dequeue.offerFirst("b");
         //尾add
-        dequeue.addLast("a");
-        dequeue.removeFirst();
-        dequeue.removeLast();
+        dequeue.offerLast("a");
+        //弹出
+        dequeue.pollFirst();
+        dequeue.pollLast();
         
 
         HashMap<String, String> map = new HashMap();

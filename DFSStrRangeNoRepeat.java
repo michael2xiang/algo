@@ -10,13 +10,13 @@ public class DFSStrRangeNoRepeat {
         String s = "aba";
         DFSStrRangeNoRepeat obj = new DFSStrRangeNoRepeat();
         String[] res = obj.permutaion(s);
-        for(int k=0;k<res.length;k++){
+        for (int k = 0; k < res.length; k++) {
             System.out.println(res[k]);
         }
     }
 
-    public String[] permutaion(String s){
-        if(s==null ||s.length() ==0){
+    public String[] permutaion(String s) {
+        if (s == null || s.length() == 0) {
             return new String[0];
         }
         char[] arr = s.toCharArray();
@@ -25,10 +25,10 @@ public class DFSStrRangeNoRepeat {
         List<String> res = new ArrayList<String>();
         boolean[] states = new boolean[s.length()];
         dfs(arr, 0, res, path, states);
-        //list<string> to 数组
+        // list<string> to 数组
         return res.toArray(new String[0]);
 
-    } 
+    }
 
     public static void dfs(char[] arr, int pos, List<String> res, StringBuilder path, boolean[] states) {
         if (pos == arr.length) {
