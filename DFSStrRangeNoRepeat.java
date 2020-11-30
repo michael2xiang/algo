@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -15,6 +16,12 @@ public class DFSStrRangeNoRepeat {
         }
     }
 
+    /**
+     * 排序法 先对原数组排序，相关的数，会相邻，方便判重
+     * 
+     * @param s
+     * @return
+     */
     public String[] permutaion(String s) {
         if (s == null || s.length() == 0) {
             return new String[0];
@@ -25,8 +32,9 @@ public class DFSStrRangeNoRepeat {
         List<String> res = new ArrayList<String>();
         boolean[] states = new boolean[s.length()];
         dfs(arr, 0, res, path, states);
+        dfsHashSet(arr, 0, res, path);
         // list<string> to 数组
-        return res.toArray(new String[0]);
+        return res.toArray(new String[res.size()]);
 
     }
 
@@ -49,4 +57,28 @@ public class DFSStrRangeNoRepeat {
         }
 
     }
+    // 方法二：交换法，节省标记数组
+    public static void dfsHashSet(char[] arr, int pos, List<String> res, StringBuilder path) {
+        if (pos == arr.length) {
+            res.add(path.toString());
+            return;
+        }
+        HashSet<Character> set = new HashSet<>();
+        for (int i = pos; i < arr.length; i++) {
+            if (set.contains(arr[i])) {
+                continue;
+            }
+            set.add(arr[i]);
+            swap(arr, i, pos);
+            dfsHashSet(arr, pos + 1, res, path);
+            swap(arr, i, pos);
+        }
+    }
+
+    static void swap(char[] arr, int i, int j) {
+        char tmp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = tmp;
+    }
+
 }

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class DFSStrRange {
@@ -8,16 +9,16 @@ public class DFSStrRange {
      */
     public static void main(String[] args) {
         String s = "aba";
+        List<ArrayList<Character>> res = new ArrayList<ArrayList<Character>>();
+        LinkedList<Character> path = new LinkedList<Character>();
         boolean[] states = new boolean[s.length()];
 
-        List<ArrayList<Character>> res = new ArrayList<ArrayList<Character>>();
-        List<Character> path = new ArrayList<Character>();
         dfs(s.toCharArray(), 0, states, res, path);
         System.out.print(res);
     }
 
     public static void dfs(char[] arrs, int idx, boolean[] states, List<ArrayList<Character>> res,
-            List<Character> path) {
+    LinkedList<Character> path) {
         if (path.size() == arrs.length) {
             res.add(new ArrayList<Character>(path));
             return;
@@ -29,7 +30,7 @@ public class DFSStrRange {
                 path.add(arrs[i]);
                 dfs(arrs, idx + 1, states, res, path);
                 states[i] = false;
-                path.remove(path.size() - 1);
+                path.removeLast(); //队列 O(1)时间复杂度移除队尾元素
             }
         }
     }

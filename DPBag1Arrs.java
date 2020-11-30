@@ -7,7 +7,10 @@ public class DPBag1Arrs {
      * 时间复杂度： m*n 
      * 空间复杂度： m
      * 
-     * 如何减少空间复杂度？ 改用一维数组，只保存添加背包的值
+     * 改用一维数组，只保存添加背包的值，减少空间复杂度
+     * 
+     * 前一个有装入，添加到背后的重量
+     * dp[i] = dp[i+arr[i]] set true if dp[i-1] == true
      * 
      * @param args
      */
