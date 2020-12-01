@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LeetCode44",
+            "request": "launch",
+            "mainClass": "LeetCode44",
+            "projectName": "algo_9254d58b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Bit1Count",
             "request": "launch",
             "mainClass": "Bit1Count",

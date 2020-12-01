@@ -1,7 +1,8 @@
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
-public class LeetCode44 {
+public class DFSIntRange {
 
     /**
      * 深度优先搜索
@@ -17,26 +18,26 @@ public class LeetCode44 {
     public static void main(String[] args) {
         int[] arr = { 1, 2, 3 };
         boolean[] used = new boolean[arr.length];
-        List<Integer> pathList = new ArrayList<Integer>();
+        LinkedList<Integer> pathList = new LinkedList<Integer>();
         List<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
-        dfs(arr, arr.length, used, 0, pathList, res);
+        dfs(arr, arr.length, used, pathList, res);
         System.out.println(res);
 
     }
 
-    private static void dfs(int[] arr, int length, boolean[] used, int index, List<Integer> pathList,
+    private static void dfs(int[] arr, int length, boolean[] used,  LinkedList<Integer> pathList,
             List<ArrayList<Integer>> res) {
-        if (index == length) {
-            res.add(new ArrayList(pathList));
+        if (pathList.size() == length) {
+            res.add(new ArrayList<Integer>(pathList));
             return;
         }
         for (int i = 0; i < length; i++) {
-            if (used[index] == false) {
-                used[index] = true;
-                pathList.add(arr[index]);
-                dfs(arr, length, used, index + 1, pathList, res);
-                used[index] = false;
-                pathList.remove(index);
+            if (used[i] == false) {
+                used[i] = true;
+                pathList.add(arr[i]);
+                dfs(arr, length, used,  pathList, res);
+                used[i] = false;
+                pathList.removeLast();
             }
         }
 

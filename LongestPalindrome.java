@@ -19,6 +19,11 @@ public class LongestPalindrome {
         System.out.println(len);
     }
 
+    /**
+     * 从中间（单，双 i or i,i+1）向两个边找回文
+     * @param s
+     * @return
+     */
     public String longestPalindrome(String s) {
         int allLen = s.length();
         int start = 0, end = 0;

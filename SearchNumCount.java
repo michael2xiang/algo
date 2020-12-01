@@ -24,7 +24,7 @@ public class SearchNumCount {
     
 
 
-    // 递归法
+    // 二分，递归法
     int res = 0;
     public int search(int[] nums, int target) {
         getCount(nums, target, 0, nums.length - 1);
@@ -33,7 +33,7 @@ public class SearchNumCount {
 
     public int getCount(int[] nums, int target, int start, int end) {
         if (start <= end) {
-            int mid = ((end - start) / 2) + start;
+            int mid = start + ((end - start) / 2);
             if (nums[mid] == target) {
                 res++;
                 getCount(nums, target, start, mid - 1);
