@@ -1,19 +1,20 @@
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class LeedCode542 {
+public class BFSMinDist {
     /**
-     * 
-     * 广度优先搜索，用队列存每层需搜索的数据
-     * 
      * 给定一个由 0 和 1 组成的矩阵，找出每个元素到最近的 0 的距离。
-     * 
      * 两个相邻元素间的距离为 1 。 示例 2: 输入:
      * 
-     * 0 0 0 0 1 0 1 1 1 输出:
+     * 0 0 0
+     * 0 1 0 
+     * 1 1 1 
+     * 输出:
      * 
-     * 0 0 0 0 1 0 1 2 1
-     * 
+     * 0 0 0
+     * 0 1 0 
+     * 1 2 1
+     * 广度优先搜索，用队列存每层需搜索的数据
      */
 
     public int[][] updateMatrix(final int[][] matrix) {

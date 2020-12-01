@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class LeetCode15 {
+public class ThreeSum {
 /**
  给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。
 
@@ -66,7 +66,7 @@ public class LeetCode15 {
     public static void main(String[] args) {
         int nums[] = { -1, 0, 1, 2, -1, -4 };
         // int nums[] = { 0, 0, 0, 0 };
-        List<List<Integer>> results = new LeetCode15().threeSum(nums);
+        List<List<Integer>> results = new ThreeSum().threeSum(nums);
         for (List<Integer> i : results) {
             for (Integer j : i) {
                 System.out.print(j + " , ");

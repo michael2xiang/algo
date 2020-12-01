@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class LeetCode39 {
+public class BFSSumTarget {
 
     /**
      * 深度优先搜索
@@ -42,10 +42,12 @@ public class LeetCode39 {
             ans.add(new ArrayList<Integer>(pathList));
             return;
         }
+        //当前值不加进去，移动idx 
         dfs(candidates, target, ans, pathList, idx + 1);
 
         if (target - candidates[idx] >= 0) {
             pathList.add(candidates[idx]);
+            //加上当前值
             dfs(candidates, target - candidates[idx], ans, pathList, idx);
             pathList.remove(pathList.size()-1);
         }
