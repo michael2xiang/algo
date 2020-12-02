@@ -62,6 +62,5 @@ public class StrSum {
             sb.append(stack.pop());
         }
         return sb.toString();
-
     }
 }

@@ -31,7 +31,16 @@ public class Ademo001 {
         // 栈
         Stack<Integer> st = new Stack<Integer>();
         st.push(1); // 入栈
-        Integer a = st.pop(); // 出
+        st.push(2); // 入栈
+        int i = st.size();
+        StringBuilder sb = new StringBuilder();
+        for (; i > 0; i--) {
+            sb.append(st.pop());
+        }
+        String tmp = sb.toString();
+
+        // Integer a = st.pop(); // 出
+        // Integer b = st.pop(); // 出
 
         // 队列
         Queue<String> queue = new LinkedList<String>();

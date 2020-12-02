@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Ademo001",
+            "request": "launch",
+            "mainClass": "Ademo001",
+            "projectName": "algo_9254d58b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StrSum",
+            "request": "launch",
+            "mainClass": "StrSum",
+            "projectName": "algo_9254d58b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LeetCode44",
             "request": "launch",
             "mainClass": "LeetCode44",
