@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class BFSSumTarget {
+public class DFSSumTarget {
 
     /**
      * 深度优先搜索
