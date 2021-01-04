@@ -16,28 +16,33 @@ public class DFSStrRangeNoRepeat {
         }
     }
 
-    /**
-     * 排序法 先对原数组排序，相关的数，会相邻，方便判重
-     * 
-     * @param s
-     * @return
-     */
     public String[] permutaion(String s) {
         if (s == null || s.length() == 0) {
             return new String[0];
         }
-        char[] arr = s.toCharArray();
-        Arrays.sort(arr);
         StringBuilder path = new StringBuilder();
         List<String> res = new ArrayList<String>();
+        char[] arr = s.toCharArray();
+
+        dfsHashSet(arr, 0, res, path);
+
+        Arrays.sort(arr);
         boolean[] states = new boolean[s.length()];
         dfs(arr, 0, res, path, states);
-        dfsHashSet(arr, 0, res, path);
+        
         // list<string> to 数组
         return res.toArray(new String[res.size()]);
 
     }
 
+    /**
+     *  方法一，排序法 先对原数组排序，相关的数，会相邻，方便判重
+     * @param arr
+     * @param pos
+     * @param res
+     * @param path
+     * @param states
+     */
     public static void dfs(char[] arr, int pos, List<String> res, StringBuilder path, boolean[] states) {
         if (pos == arr.length) {
             res.add(path.toString());
@@ -68,6 +73,7 @@ public class DFSStrRangeNoRepeat {
             if (set.contains(arr[i])) {
                 continue;
             }
+            path.append(arr[i]);
             set.add(arr[i]);
             swap(arr, i, pos);
             dfsHashSet(arr, pos + 1, res, path);
