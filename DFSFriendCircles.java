@@ -14,8 +14,31 @@ public class DFSFriendCircles {
         Output: 2
 
      */
+    public static void main(String[] args) {
+       int[][] matric = { { 1, 1, 0 }, { 1, 1, 0 }, { 0, 0, 1 } };
+       DFSFriendCircles obj = new DFSFriendCircles();
+       int count = obj.findCircleNum(matric);
+       System.out.println(count);
+    }
+    
+    private int findCircleNum(int[][] matric) {
+       int count = 0;
+       boolean[] used = new boolean[matric.length];
+       for (int i = 0; i < matric.length; i++) {
+          if (used[i] == false) {
+             dfs(matric, used, i);
+             count++;
+          }
+       }
+       return count;
+    }
 
-     private void findCircleNum(){
-         
-     }
+    private void dfs(int[][] matric, boolean[] used, int i) {
+       used[i] = true;
+       for (int j = 0; j < matric.length; j++) {
+          if (matric[i][j] == 1 && used[i] == false) {
+             dfs(matric, used, i);
+          }
+       }
+    }
 }

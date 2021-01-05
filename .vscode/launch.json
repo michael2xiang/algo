@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DFSFriendCircles",
+            "request": "launch",
+            "mainClass": "DFSFriendCircles",
+            "projectName": "algo_9254d58b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Ademo001",
             "request": "launch",
             "mainClass": "Ademo001",
